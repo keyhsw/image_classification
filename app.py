@@ -3,13 +3,9 @@ import torch
 import requests
 from torchvision import transforms
 
-from openxlab.model import download
-download(model_repo='thomas-yanxin/MindChat-InternLM-7B', 
-model_name='pytorch_model-00001-of-00002.bin')
-
-# model = torch.hub.load('pytorch/vision:v0.6.0', 'resnet18', pretrained=True).eval()
-# response = requests.get("https://git.io/JJkYN")
-# labels = response.text.split("\n")
+model = torch.hub.load('pytorch/vision:v0.6.0', 'resnet18', pretrained=True).eval()
+response = requests.get("https://git.io/JJkYN")
+labels = response.text.split("\n")
 
 def predict(inp):
   inp = transforms.ToTensor()(inp).unsqueeze(0)
