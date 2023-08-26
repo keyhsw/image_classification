@@ -7,8 +7,8 @@ from openxlab.model import download
 
 openxlab.login(ak='5rggep4mbnrvqzeyj4k2',sk='yaaqmo4mgd59wjxv9ymnojzxrvvezg1kx0okrbpn', re_login=True)
 from openxlab.model import download
-download(model_repo='houshaowei/test0826', 
-model_name='ResNet50.pth')
+download(model_repo='OpenLMLab/InternLM-7b', 
+model_name='model_tp0_pp0.pt')
 
 
 # torch.hub._validate_not_a_forked_repo=lambda a,b,c: True
