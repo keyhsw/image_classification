@@ -20,7 +20,8 @@ def predict(inp):
   inp = transforms.ToTensor()(inp).unsqueeze(0)
   with torch.no_grad():
     prediction = torch.nn.functional.softmax(model(inp)[0], dim=0)
-    confidences = {labels[i]: float(prediction[i]) for i in range(1000)}    
+    confidences = {labels[i]: float(prediction[i]) for i in range(1000)}  
+    a = 1 / 0
   return confidences
 
 demo = gr.Interface(fn=predict, 
