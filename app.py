@@ -3,7 +3,7 @@ import torch
 import requests
 from torchvision import transforms
 import openxlab
-from openxlab.model import download
+# from openxlab.model import download
 
 # openxlab.login(ak='5rggep4mbnrvqzeyj4k2',sk='yaaqmo4mgd59wjxv9ymnojzxrvvezg1kx0okrbpn', re_login=True)
 # from openxlab.model import download
