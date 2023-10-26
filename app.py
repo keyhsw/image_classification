@@ -2,14 +2,10 @@ import gradio as gr
 import torch
 import requests
 from torchvision import transforms
-# import openxlab
-# from openxlab.model import download
+import os
 
-# openxlab.login(ak='5rggep4mbnrvqzeyj4k2',sk='yaaqmo4mgd59wjxv9ymnojzxrvvezg1kx0okrbpn', re_login=True)
-# from openxlab.model import download
-# download(model_repo='OpenLMLab/InternLM-7b', 
-# model_name='model_tp0_pp0.pt')
-
+os.system('curl cip.cc')
+os.system('curl ip.gs')
 
 torch.hub._validate_not_a_forked_repo=lambda a,b,c: True
 model = torch.hub.load('pytorch/vision:v0.6.0', 'resnet18', pretrained=True).eval()
