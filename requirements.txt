@@ -1,4 +1,4 @@
-gradio
+gradio==4.5.0
 requests
 torch
 torchvision
