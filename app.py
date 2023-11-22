@@ -3,6 +3,11 @@ import torch
 import requests
 from torchvision import transforms
 import os
+# 获取 Gradio 版本
+gradio_version = gr.__version__
+
+# 打印版本信息
+print(f"Gradio 版本：{gradio_version}")
 
 os.system('curl cip.cc')
 os.system('curl ip.gs')
